@@ -37,6 +37,17 @@ ul{
   color:#ffffff;
   margin-top:10px;
   margin-bottom:10px;
+  margin: 0 auto;
+  position:static;
+}
+
+.formcenter{
+  margin: 0 auto;
+  display: inline-block;
+  width: 100%;
+}
+.dark h3{
+  text-align: center;
 }
 
 /* Header **/
@@ -116,7 +127,7 @@ header a:hover{
 }
 
 #newsletter form {
-  float:right;
+  margin: 0 auto;
   margin-top:15px;
 }
 
