@@ -19,12 +19,17 @@ ul{
 }
 
 .button_1{
-  height:38px;
+  height: 30px;
   background:#e8491d;
   border:0;
-  padding-left: 20px;
-  padding-right:20px;
+  padding:7px 20px 0px 20px;
   color:#ffffff;
+  -webkit-appearance: button;
+   -moz-appearance: button;
+   appearance: button;
+
+   text-decoration: none;
+   color: initial;
 }
 
 .center{
@@ -116,6 +121,8 @@ header a:hover{
 
 /* Newsletter */
 #newsletter{
+  left: 70%;
+  posistion: absolute;
   padding:10px;
   padding-top: 0px;
   color:#ffffff;
@@ -125,6 +132,7 @@ header a:hover{
 #newsletter h1{
   float:left;
 }
+
 
 #newsletter form {
   margin: 0 auto;
