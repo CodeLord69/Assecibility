@@ -153,7 +153,9 @@ header a:hover{
 #newsletter input[type="email"], input[type="password"]{
   padding:4px;
   height:25px;
+  margin: 10px;
   width:250px;
+
 }
 
 /* Boxes */
