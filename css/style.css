@@ -114,8 +114,19 @@ header a:hover{
   margin-bottom:10px;
 }
 
+#showcase h2{
+  margin-top:100px;
+  font-size:35px;
+  margin-bottom:10px;
+}
+
 #showcase p{
   font-size:20px;
+}
+#showcase input[type="email"], input[type="password"]{
+  padding:4px;
+  height:25px;
+  width:250px;
 }
 
 
@@ -188,8 +199,15 @@ ul#services li{
   background:#e6e6e6;
 }
 
+#startfooter {
+   position:absolute;
+   bottom:0;
+   width:97%;
+}
+
 footer{
-  padding:20px;
+  padding: 20px;
+  margin-bottom: 0px;
   margin-top:10px;
   color:#ffffff;
   background-color:#e8491d;
