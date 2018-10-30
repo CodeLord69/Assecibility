@@ -2,7 +2,7 @@ body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;
-  background-color:#f4f4f4;
+  background-color: #f4f4f4;
 }
 
 /* Global */
@@ -19,12 +19,21 @@ ul{
 }
 
 .button_1{
-  height:38px;
+  height: 30px;
   background:#e8491d;
   border:0;
-  padding-left: 20px;
-  padding-right:20px;
+  padding:7px 20px 0px 20px;
   color:#ffffff;
+  -webkit-appearance: button;
+   -moz-appearance: button;
+   appearance: button;
+
+   text-decoration: none;
+   color: initial;
+}
+
+.center{
+  text-align: center;
 }
 
 .dark{
@@ -94,13 +103,26 @@ header a:hover{
   margin-bottom:10px;
 }
 
+#showcase h2{
+  margin-top:100px;
+  font-size:35px;
+  margin-bottom:10px;
+}
+
 #showcase p{
   font-size:20px;
+}
+#showcase input[type="email"], input[type="password"]{
+  padding:4px;
+  height:25px;
+  width:250px;
 }
 
 
 /* Newsletter */
 #newsletter{
+  left: 70%;
+  posistion: absolute;
   padding:10px;
   padding-top: 0px;
   color:#ffffff;
@@ -110,6 +132,7 @@ header a:hover{
 #newsletter h1{
   float:left;
 }
+
 
 #newsletter form {
   float:right;
@@ -165,8 +188,15 @@ ul#services li{
   background:#e6e6e6;
 }
 
+#startfooter {
+   position:absolute;
+   bottom:0;
+   width:97%;
+}
+
 footer{
-  padding:20px;
+  padding: 20px;
+  margin-bottom: 0px;
   margin-top:10px;
   color:#ffffff;
   background-color:#e8491d;
