@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Canvas | Om</title>
-    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/style_fag.css">
   </head>
   <body>
     <header>
@@ -26,25 +27,83 @@
       </div>
     </header>
 
-      <section id="main">
         <div class="container">
-          <article id="main-col">
-            <h1 class="page-title">Staff of the university</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p class="dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </article>
+          <p id="main-col">
+            <h1 class="page-title">Fag</h1>
+          </p>
 
-          <aside id="sidebar">
-            <div class="dark">
-              <h3>Hva gjør vi</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-          </aside>
+          <h2 class="studieår">1. studieår</h2>
+
+          <table class="fagtabell">
+            <tr>
+              <td><a id="prog" href="#">DAPE1400 Programmering<br>Høst 2018</a></td>
+              <td><a href="#">DAFE1200 Webprosjekt<br>Høst 2018</a></td>
+              <td><a href="#">DAPE1300 Diskret matematikk<br>Høst 2018</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">DAFE1000 Matematikk 1000<br>Vår 2019</a></td>
+              <td><a href="#">DATA1600 Programutvikling<br>Vår 2019</a></td>
+              <td><a href="#">DATA1500 10 Databaser<br>Vår 2019</a></td>
+            </tr>
+          </table>
         </div>
-      </section>
+
+
+
+        <div id="overlayInner">
+
+            <div>
+              <p id="lukkVindu">Lukk</p>
+            </div>
+            <div class="fagMenySide">
+              <a href="#">Karakterer</a>
+              <a href="#">Pensumliste</a>
+              <a href="#">Oppgaver</a>
+              <a href="#">Kontakt</a>
+            </div>
+
+            <!-- Page content -->
+            <div class="tekstBoks">
+              <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                 irure dolor in reprehenderit in voluptate velit esse cillum
+                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                 cupidatat non proident, sunt in culpa qui officia deserunt
+                 mollit anim id est laborum.
+               </p>
+            </div>
+
+          </div>
+
+
 
       <footer>
-        <p>Canvas, Copyright &copy; 2018</p>
+        <p>Dank, Copyright &copy; 2018</p>
       </footer>
     </body>
+
+<script type="text/javascript">
+
+var progEl=document.getElementById("prog");
+var lukkVinduEl=document.getElementById("lukkVindu");
+
+progEl.addEventListener("click", on);
+lukkVinduEl.addEventListener("click",off);
+
+
+
+function on() {
+    document.getElementById("overlayInner").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlayInner").style.display = "none";
+}
+
+</script>
+
+
   </html>
