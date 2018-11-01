@@ -255,7 +255,7 @@ ul#services li{
   background:#e6e6e6;
 }
 
-<<<<<<< HEAD
+
 #startfooter {
    position:absolute;
    bottom:0;
@@ -304,9 +304,40 @@ h4{
   float: right;
 
 }
-=======
+/* Min side styling */
 
->>>>>>> toby
+#MS_innhold, #MS_top{
+  padding-left: 30px;
+}
+
+#MS_top{
+  padding-top: 30px;
+  background-color: #e6e6e6;
+}
+
+, .MS_inline{
+  width: 40vw;
+  background-color: blue;
+}
+
+.avatar_bilde{
+  width: 20vw;
+}
+
+#MS_innhold {
+  background-color: #e6e6e6;
+}
+
+#MS_innhold a{
+  text-decoration: none;
+  color: black;
+}
+
+.MS_inline{
+  display: inline-block;
+}
+
+
 
 footer{
   padding: 20px;
@@ -316,6 +347,7 @@ footer{
   background-color:#e8491d;
   text-align: center;
 }
+
 
 
 /* Media Queries */
