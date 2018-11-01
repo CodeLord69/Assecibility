@@ -123,11 +123,27 @@ table a {
   margin-right: 10px;
 }
 
+#overlay {
+  display: none;
+}
+
+#hjem {
+      display: none; /* Hidden by default */
+}
+#pensum {
+      display: none; /* Hidden by default */
+}
+#oppgaver {
+      display: none; /* Hidden by default */
+}
+#karakterer {
+      display: none; /* Hidden by default */
+}
 
 
-#overlayInner {
+.overlayInner {
     position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
+
     width: 50%; /* Full width (cover the whole page) */
     height: 50%; /* Full height (cover the whole page) */
     top: 22%;
@@ -162,19 +178,22 @@ table a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 15px;
-    color: #818181;
+    color: white;
     display: block;
 }
 
 /* When you mouse over the navigation links, change their color */
 .fagMenySide a:hover {
-    color: #f1f1f1;
+    color: #cccccc;
 }
 
-/* Style page content */
+
 .tekstBoks {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+    margin-left: 160px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 60px;
+    padding-bottom: 30px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */

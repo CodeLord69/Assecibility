@@ -36,47 +36,65 @@
 
           <table class="fagtabell">
             <tr>
-              <td><a id="prog" href="#">DAPE1400 Programmering<br>Høst 2018</a></td>
-              <td><a href="#">DAFE1200 Webprosjekt<br>Høst 2018</a></td>
-              <td><a href="#">DAPE1300 Diskret matematikk<br>Høst 2018</a></td>
+              <td><a id="start" href="#">DAPE1400 Programmering<br>Høst 2018</a></td>
+              <td><a id="start1" href="#">DAFE1200 Webprosjekt<br>Høst 2018</a></td>
+              <td><a id="start2" href="#">DAPE1300 Diskret matematikk<br>Høst 2018</a></td>
             </tr>
             <tr>
-              <td><a href="#">DAFE1000 Matematikk 1000<br>Vår 2019</a></td>
-              <td><a href="#">DATA1600 Programutvikling<br>Vår 2019</a></td>
-              <td><a href="#">DATA1500 10 Databaser<br>Vår 2019</a></td>
+              <td><a id="start3" href="#">DAFE1000 Matematikk 1000<br>Vår 2019</a></td>
+              <td><a id="start4" href="#">DATA1600 Programutvikling<br>Vår 2019</a></td>
+              <td><a id="start5" href="#">DATA1500 10 Databaser<br>Vår 2019</a></td>
             </tr>
           </table>
         </div>
 
 
-
-        <div id="overlayInner">
+          <!-- HjemSide i overlay -->
+        <div class="overlayInner" id="overlay">
 
             <div>
               <p id="lukkVindu">Lukk</p>
             </div>
+
             <div class="fagMenySide">
-              <a href="#">Karakterer</a>
-              <a href="#">Pensumliste</a>
-              <a href="#">Oppgaver</a>
-              <a href="#">Kontakt</a>
+              <a id="hjemKnapp" href="#">Hjem</a>
+              <a id="pensumKnapp" href="#">Pensum</a>
+              <a id="karaktererKnapp"href="#">Karakterer</a>
+              <a id="oppgaverKnapp" href="#">Oppgaver</a>
             </div>
 
-            <!-- Page content -->
-            <div class="tekstBoks">
+
+            <div class="tekstBoks" id="hjem">
               <p>
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                 irure dolor in reprehenderit in voluptate velit esse cillum
-                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                 cupidatat non proident, sunt in culpa qui officia deserunt
-                 mollit anim id est laborum.
+                <h1>Hjem</h1>
+                 Her finner du informasjon om faget.
+               </p>
+            </div>
+
+            <div class="tekstBoks" id="pensum">
+              <p>
+                <h1>Pensum</h1>
+                 Følg med for oppdatert pensumliste.
+               </p>
+            </div>
+
+            <div class="tekstBoks" id="karakterer">
+              <p>
+                <h1>Karakterer</h1>
+                 Karakterer blir tilgjengelig etter eksamen.
+               </p>
+            </div>
+
+            <div class="tekstBoks" id="oppgaver">
+              <p>
+                <h1>Oppgaver</h1>
+                 Ukesoppgaver vil bli lagt ut her.
                </p>
             </div>
 
           </div>
+
+
 
 
 
@@ -87,20 +105,80 @@
 
 <script type="text/javascript">
 
-var progEl=document.getElementById("prog");
+
+<!-- Hjem Meny fra alle fag og fra hjem-knapp inne i fag -->
+var startEl=document.getElementById("start");
+var start1El=document.getElementById("start1");
+var start2El=document.getElementById("start2");
+var start3El=document.getElementById("start3");
+var start4El=document.getElementById("start4");
+var start5El=document.getElementById("start5");
+
+var hjemEl = document.getElementById("hjemKnapp");
+var pensumEl = document.getElementById("pensumKnapp");
+var karaktererEl = document.getElementById("karaktererKnapp");
+var oppgaverEl = document.getElementById("oppgaverKnapp");
+
+
+
+
+
 var lukkVinduEl=document.getElementById("lukkVindu");
 
-progEl.addEventListener("click", on);
+
+startEl.addEventListener("click", on);
+start1El.addEventListener("click", on);
+start2El.addEventListener("click", on);
+start3El.addEventListener("click", on);
+start4El.addEventListener("click", on);
+start5El.addEventListener("click", on);
 lukkVinduEl.addEventListener("click",off);
+
+hjemEl.addEventListener("click", hjem);
+pensumEl.addEventListener("click", pensum);
+karaktererEl.addEventListener("click", karakterer);
+oppgaverEl.addEventListener("click", oppgaver);
 
 
 
 function on() {
-    document.getElementById("overlayInner").style.display = "block";
+    document.getElementById("hjem").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+}
+function hjem() {
+    document.getElementById("hjem").style.display = "block";
+    document.getElementById("pensum").style.display = "none";
+    document.getElementById("karakterer").style.display = "none";
+    document.getElementById("oppgaver").style.display = "none";
+}
+
+function pensum() {
+    document.getElementById("hjem").style.display = "none";
+    document.getElementById("pensum").style.display = "block";
+    document.getElementById("karakterer").style.display = "none";
+    document.getElementById("oppgaver").style.display = "none";
+}
+
+function karakterer() {
+    document.getElementById("hjem").style.display = "none";
+    document.getElementById("pensum").style.display = "none";
+    document.getElementById("karakterer").style.display = "block";
+    document.getElementById("oppgaver").style.display = "none";
+}
+
+function oppgaver() {
+    document.getElementById("hjem").style.display = "none";
+    document.getElementById("pensum").style.display = "none";
+    document.getElementById("karakterer").style.display = "none";
+    document.getElementById("oppgaver").style.display = "block";
 }
 
 function off() {
-    document.getElementById("overlayInner").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("hjem").style.display = "none";
+    document.getElementById("pensum").style.display = "none";
+    document.getElementById("karakterer").style.display = "none";
+    document.getElementById("oppgaver").style.display = "none";
 }
 
 </script>
