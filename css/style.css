@@ -186,11 +186,65 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
   padding:5px;
 }
 
-/* Main-col */
-article#main-col{
-  float:left;
-  width:65%;
+.titler {
+  border: 1px solid black;
+  display: inline-block;
 }
+#inbox {
+  border: 1px solid black;
+  width: 25%;
+  height: 500px;
+
+}
+#inbox-titel {
+  width: 25%;
+}
+#inbox-box {
+  left: 25%;
+  width: 75%;
+  position: absolute;
+}
+#usynlig {
+  opacity: 0;
+    text-align: center;
+}
+#inbox-text {
+  text-align: center;
+}
+.mail {
+  width: 100%;
+  border-bottom: 1px solid black;
+  height: 100px;
+  overflow:hidden;
+}
+#sisteMail {
+  border-bottom: 0px;
+}
+.mail_tittel {
+  text-align: center;
+  font-size: 15px;
+}
+.infoMail {
+  text-align: center;
+}
+#rammeMail {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  width: 75%;
+  left: 25%;
+  position:absolute;
+  top: 28.5%;
+  height: 500px;
+
+}
+#mailJs1, #mailJs2, #mailJs3, #mailJs4, #mailJs5 {
+  display: none;
+  padding: 20px;
+}
+.mail:hover{
+  background-color: gray;
+}
+
 
 /* Services */
 ul#services li{
@@ -201,6 +255,7 @@ ul#services li{
   background:#e6e6e6;
 }
 
+<<<<<<< HEAD
 #startfooter {
    position:absolute;
    bottom:0;
@@ -249,6 +304,9 @@ h4{
   float: right;
 
 }
+=======
+
+>>>>>>> toby
 
 footer{
   padding: 20px;
