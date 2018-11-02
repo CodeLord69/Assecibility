@@ -5,7 +5,6 @@ body{
   background-color: #f4f4f4;
 }
 
-/* Global */
 .container{
   width:80%;
   margin:auto;
@@ -50,6 +49,7 @@ ul{
   display: inline-block;
   width: 100%;
 }
+
 .dark h3{
   text-align: center;
 }
@@ -99,36 +99,37 @@ header a:hover{
   font-weight:bold;
 }
 
-/* Showcase */
-#showcase{
+/* Bakgrunnsbilde */
+#bakgrunnsbilde{
   min-height:400px;
   background:url('../bilder/bakgrunn.jpg') no-repeat 0 -400px;
   text-align:center;
   color:#ffffff;
 }
 
-#showcase h1{
+#bakgrunnsbilde h1{
   margin-top:100px;
   font-size:45px;
   margin-bottom:10px;
 }
 
-#showcase h2{
+#bakgrunnsbilde h2{
   margin-top:100px;
   font-size:35px;
   margin-bottom:10px;
 }
 
-#showcase p{
+#bakgrunnsbilde p{
   font-size:20px;
 }
-#showcase input[type="email"], input[type="password"]{
+
+#bakgrunnsbilde input[type="email"], input[type="password"]{
   padding:4px;
   height:25px;
   width:250px;
 }
 
-/* Boxes */
+/* Sosiale medier */
 #boxes{
   margin-top:20px;
 }
@@ -137,66 +138,60 @@ header a:hover{
   float:left;
   text-align: center;
   width:30%;
-  padding:10px;
+  padding:15px;
 }
 
 #boxes .box img{
-  width:90px;
+  width:80px;
 }
 
-/* Sidebar */
-aside#sidebar{
-  float:right;
-  width:30%;
-  margin-top:10px;
-}
+/* Mails */
 
-aside#sidebar .quote input, aside#sidebar .quote textarea{
-  width:90%;
-  padding:5px;
-}
-
-.titler {
-  border: 1px solid black;
-  display: inline-block;
-}
 #inbox {
   border: 1px solid black;
   width: 25%;
   height: 500px;
-
 }
+
 #inbox-titel {
   width: 25%;
 }
+
 #inbox-box {
   left: 25%;
   width: 75%;
   position: absolute;
 }
+
 #usynlig {
   opacity: 0;
-    text-align: center;
+  text-align: center;
 }
+
 #inbox-text {
   text-align: center;
 }
+
 .mail {
   width: 100%;
   border-bottom: 1px solid black;
   height: 100px;
   overflow:hidden;
 }
+
 #sisteMail {
   border-bottom: 0px;
 }
+
 .mail_tittel {
   text-align: center;
   font-size: 15px;
 }
+
 .infoMail {
   text-align: center;
 }
+
 #rammeMail {
   border-bottom: 1px solid black;
   border-right: 1px solid black;
@@ -205,27 +200,18 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
   position:absolute;
   top: 28.5%;
   height: 500px;
-
 }
+
 #mailJs1, #mailJs2, #mailJs3, #mailJs4, #mailJs5 {
   display: none;
   padding: 20px;
 }
+
 .mail:hover{
   background-color: gray;
 }
 
-
-/* Services */
-ul#services li{
-  list-style: none;
-  padding:20px;
-  border: #cccccc solid 1px;
-  margin-bottom:5px;
-  background:#e6e6e6;
-}
-
-
+/* Varsler */
 
 .kunngjøringer{
   border: 2px solid;
@@ -235,6 +221,7 @@ ul#services li{
   margin: 0 auto;
   border-radius: 25px;
 }
+
 .varsler{
   border-top: 2px solid #e8491d;
   text-align: left;
@@ -246,30 +233,12 @@ h4{
   font-weight: bold;
 }
 
- .badge {
-  position: absolute;
-  top: 10px;
-  right: 35%;
-  padding: 5px 10px;
-  border-radius: 50%;
-  background: red;
-  color: white;
-}
-.badgemail{
-  position: absolute;
-  top: 10px;
-  right: 43.5%;
-  padding: 5px 10px;
-  border-radius: 50%;
-  background: red;
-  color: white;
-}
 .datoleft{
   text-align: right;
   margin: 5px;
   float: right;
-
 }
+
 /* Min side styling */
 
 #MS_innhold, #MS_top{
@@ -303,8 +272,7 @@ h4{
   display: inline-block;
 }
 
-
-
+/* Footer */
 footer{
   padding: 20px;
   margin-bottom: 0px;
@@ -312,5 +280,4 @@ footer{
   color:#ffffff;
   background-color:#e8491d;
   text-align: center;
-
 }

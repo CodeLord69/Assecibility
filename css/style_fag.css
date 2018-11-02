@@ -5,7 +5,10 @@ body{
   background-color:#f4f4f4;
 }
 
-/* Global */
+h1, h2{
+  text-align: left;
+}
+
 .container{
   width:80%;
   margin:auto;
@@ -13,27 +16,12 @@ body{
   height: 10%;
 }
 
+.fagtabell{
+  margin: 0 auto;
+}
 ul{
   margin:0;
   padding:0;
-}
-.badge {
- position: absolute;
- top: 10px;
- right: 35%;
- padding: 5px 10px;
- border-radius: 50%;
- background: red;
- color: white;
-}
-.badgemail{
-  position: absolute;
-  top: 10px;
-  right: 43.5%;
-  padding: 5px 10px;
-  border-radius: 50%;
-  background: red;
-  color: white;
 }
 
 .dark, td{
@@ -89,26 +77,10 @@ header a:hover{
   font-weight:bold;
 }
 
-/* Main-col */
-article#main-col{
-  float:left;
-  width:65%;
-}
 
 .studieår{
   text-align: center;
 }
-
-footer{
-  padding: 20px;
-  margin-bottom: 0px;
-  margin-top:10px;
-  color:#ffffff;
-  background-color:#e8491d;
-  text-align: center;
-
-}
-
 
 td {
   border: 1px solid black;
@@ -144,52 +116,54 @@ table a {
 }
 
 #hjem {
-      display: none; /* Hidden by default */
+      display: none;
 }
+
 #pensum {
-      display: none; /* Hidden by default */
+      display: none;
 }
+
 #oppgaver {
-      display: none; /* Hidden by default */
+      display: none;
 }
+
 #karakterer {
-      display: none; /* Hidden by default */
+      display: none;
 }
 
 
 .overlayInner {
-    position: fixed; /* Sit on top of the page content */
-
-    width: 50%; /* Full width (cover the whole page) */
-    height: 50%; /* Full height (cover the whole page) */
+    position: fixed;
+    width: 50%;
+    height: 50%;
     top: 22%;
     left: 23%;
     right: 0;
     bottom: 0;
-    background-color: white; /* Black background with opacity */
+    background-color: white;
     opacity: 0.99;
     border: 1px solid black;
     border-radius: 10px;
-    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+    z-index: 3;
 }
 
+/* Sidemeny */
 
 .fagMenySide {
-    height: 94.5%; /* Full-height: remove this if you want "auto" height */
-    width: 120px; /* Set the width of the sidebar */
-    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 94.5%;
+    width: 120px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
     left: 0;
     background-color: #35424a;
-    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-x: hidden;
     padding-top: 20px;
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
     border-right: #e8491d 3px solid;
 }
 
-/* The navigation menu links */
 .fagMenySide a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -198,11 +172,9 @@ table a {
     display: block;
 }
 
-/* When you mouse over the navigation links, change their color */
 .fagMenySide a:hover {
     color: #cccccc;
 }
-
 
 .tekstBoks {
     margin-left: 160px;
@@ -210,4 +182,13 @@ table a {
     padding-left: 10px;
     padding-right: 60px;
     padding-bottom: 30px;
+}
+
+footer{
+  padding: 20px;
+  margin-bottom: 0px;
+  margin-top:10px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
 }
