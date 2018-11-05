@@ -1,0 +1,194 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+h1, h2{
+  text-align: left;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+  height: 10%;
+}
+
+.fagtabell{
+  margin: 0 auto;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+
+.dark, td{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+
+.studieår{
+  text-align: center;
+}
+
+td {
+  border: 1px solid black;
+  padding: 0;
+}
+
+table {
+  border-spacing: 50px;
+}
+
+table a {
+  padding: 30px;
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+#lukkVindu{
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  width: 10%;
+  text-align: center;
+  float: right;
+  text-decoration: none;
+  color: initial;
+  margin-right: 10px;
+}
+
+#overlay {
+  display: none;
+}
+
+#hjem {
+      display: none;
+}
+
+#pensum {
+      display: none;
+}
+
+#oppgaver {
+      display: none;
+}
+
+#karakterer {
+      display: none;
+}
+
+
+.overlayInner {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    top: 22%;
+    left: 23%;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 0.99;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+/* Sidemeny */
+
+.fagMenySide {
+    height: 94.5%;
+    width: 120px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #35424a;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-right: #e8491d 3px solid;
+}
+
+.fagMenySide a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+}
+
+.fagMenySide a:hover {
+    color: #cccccc;
+}
+
+.tekstBoks {
+    margin-left: 160px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+
+footer{
+  padding: 20px;
+  margin-bottom: 0px;
+  margin-top:10px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}

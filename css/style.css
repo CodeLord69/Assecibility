@@ -2,10 +2,9 @@ body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;
-  background-color:#f4f4f4;
+  background-color: #f4f4f4;
 }
 
-/* Global */
 .container{
   width:80%;
   margin:auto;
@@ -27,9 +26,12 @@ ul{
   -webkit-appearance: button;
    -moz-appearance: button;
    appearance: button;
-
    text-decoration: none;
    color: initial;
+}
+
+.center{
+  text-align: center;
 }
 
 .dark{
@@ -38,6 +40,18 @@ ul{
   color:#ffffff;
   margin-top:10px;
   margin-bottom:10px;
+  margin: 0 auto;
+  position:static;
+}
+
+.formcenter{
+  margin: 0 auto;
+  display: inline-block;
+  width: 100%;
+}
+
+.dark h3{
+  text-align: center;
 }
 
 /* Header **/
@@ -85,52 +99,37 @@ header a:hover{
   font-weight:bold;
 }
 
-/* Showcase */
-#showcase{
+/* Bakgrunnsbilde */
+#bakgrunnsbilde{
   min-height:400px;
   background:url('../bilder/bakgrunn.jpg') no-repeat 0 -400px;
   text-align:center;
   color:#ffffff;
 }
 
-#showcase h1{
+#bakgrunnsbilde h1{
   margin-top:100px;
   font-size:45px;
   margin-bottom:10px;
 }
 
-#showcase p{
+#bakgrunnsbilde h2{
+  margin-top:100px;
+  font-size:35px;
+  margin-bottom:10px;
+}
+
+#bakgrunnsbilde p{
   font-size:20px;
 }
 
-
-/* Newsletter */
-#newsletter{
-  left: 70%;
-  posistion: absolute;
-  padding:10px;
-  padding-top: 0px;
-  color:#ffffff;
-  background:#35424a
-}
-
-#newsletter h1{
-  float:left;
-}
-
-
-#newsletter form {
-  float:right;
-  margin-top:15px;
-}
-
-#newsletter input[type="email"], input[type="password"]{
+#bakgrunnsbilde input[type="email"], input[type="password"]{
   padding:4px;
   height:25px;
   width:250px;
 }
 
-/* Boxes */
+/* Sosiale medier */
 #boxes{
   margin-top:20px;
 }
@@ -139,79 +138,141 @@ header a:hover{
   float:left;
   text-align: center;
   width:30%;
-  padding:10px;
+  padding:15px;
 }
 
 #boxes .box img{
-  width:90px;
+  width:80px;
 }
 
-/* Sidebar */
-aside#sidebar{
-  float:right;
-  width:30%;
-  margin-top:10px;
+/* Mails */
+
+#inbox {
+  border: 1px solid black;
+  width: 25%;
+  height: 500px;
 }
 
-aside#sidebar .quote input, aside#sidebar .quote textarea{
-  width:90%;
-  padding:5px;
+#inbox-titel {
+  width: 25%;
 }
 
-/* Main-col */
-article#main-col{
-  float:left;
-  width:65%;
+#inbox-box {
+  left: 25%;
+  width: 75%;
+  position: absolute;
 }
 
-/* Services */
-ul#services li{
-  list-style: none;
-  padding:20px;
-  border: #cccccc solid 1px;
-  margin-bottom:5px;
-  background:#e6e6e6;
+#usynlig {
+  opacity: 0;
+  text-align: center;
 }
 
+#inbox-text {
+  text-align: center;
+}
+
+.mail {
+  width: 100%;
+  border-bottom: 1px solid black;
+  height: 100px;
+  overflow:hidden;
+}
+
+#sisteMail {
+  border-bottom: 0px;
+}
+
+.mail_tittel {
+  text-align: center;
+  font-size: 15px;
+}
+
+.infoMail {
+  text-align: center;
+}
+
+#rammeMail {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  width: 75%;
+  left: 25%;
+  position:absolute;
+  top: 28.5%;
+  height: 500px;
+}
+
+#mailJs1, #mailJs2, #mailJs3, #mailJs4, #mailJs5 {
+  display: none;
+  padding: 20px;
+}
+
+.mail:hover{
+  background-color: gray;
+}
+
+/* Varsler */
+
+.kunngjøringer{
+  border: 2px solid;
+  width: 70%;
+  text-align: center;
+  border-bottom: 2px solid;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+.varsler{
+  border-top: 2px solid #e8491d;
+  text-align: left;
+  display: inline-block;
+
+}
+
+h4{
+  font-weight: bold;
+}
+
+.datoleft{
+  text-align: right;
+  margin: 5px;
+  float: right;
+}
+
+/* Min side styling */
+
+#MS_innhold, #MS_top{
+  padding-left: 30px;
+}
+
+#MS_top{
+  padding-top: 30px;
+  background-color: #e6e6e6;
+}
+
+.avatar_bilde{
+  width: 20vw;
+}
+
+#MS_innhold {
+  background-color: #e6e6e6;
+}
+
+#MS_innhold a{
+  text-decoration: none;
+  color: black;
+}
+
+.MS_inline{
+  display: inline-block;
+}
+
+/* Footer */
 footer{
-  padding:20px;
+  padding: 20px;
+  margin-bottom: 0px;
   margin-top:10px;
   color:#ffffff;
   background-color:#e8491d;
   text-align: center;
-}
-
-
-/* Media Queries */
-@media(max-width: 768px){
-  header #branding,
-  header nav,
-  header nav li,
-  #newsletter h1,
-  #newsletter form,
-  #boxes .box,
-  article#main-col,
-  aside#sidebar{
-    float:none;
-    text-align:center;
-    width:100%;
-  }
-
-  header{
-    padding-bottom:20px;
-  }
-
-  #showcase h1{
-    margin-top:40px;
-  }
-
-  #newsletter button, .quote button{
-    display:block;
-    width:100%;
-  }
-
-  #newsletter form input[type="email"], .quote input, .quote textarea{
-    width:100%;
-    margin-bottom:5px;
-  }
 }
